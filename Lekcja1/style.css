@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.title h1 {
+    text-align: center;
+    padding: 60px 0;
+}
+.photos {
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid black;
+}
+.single_photo {
+    border: 1px solid black;
+    margin: 10px 0;
+    padding: 50px;
+}
+.single_photo p {
+    text-align: center;
+}
+
+.main_content {
+    display: flex;
+    justify-content: center;
+    border: 1px solid black;
+}
+
+.main_content .gif_description {
+    padding: 150px;
+    border: 1px solid black;
+    margin: 20px 0;
+
+}
+
+footer p {
+    text-align: right;
+    padding: 50px;
+    border: 1px solid black;
+}

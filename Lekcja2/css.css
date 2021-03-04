@@ -1,0 +1,152 @@
+body {
+    font-size: 18px;
+}
+* {
+    box-sizing: border-box;
+}
+.sprite {
+  width: 496px;
+  height: 200px;
+  background: url(https://raw.githubusercontent.com/apietryga/Font-end-sources/master/lekcja2/cw1/logo_sprites.jpg);
+    background-repeat: no-repeat;
+}
+.sprite:hover {
+  background-position: 0px -200px;
+}
+.sprite:active {
+   background-position: 0px -400px;
+}
+#logo {
+    border: solid 2px black;
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    margin: 30px 0 30px 0;
+}
+.nav-txt {
+    display: block;
+    padding: auto 20px auto 20px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    color: hsl(337, 100%, 20%);
+}
+#nav-list {
+    display: flex;
+    justify-content:space-around;
+}
+#header {
+    border-bottom: solid 2px black;
+    display: flex;
+    justify-content: flex-end;
+}
+#absolutne {
+    border-bottom: solid 2px black;
+}
+.title {
+    font-size: 2em;
+    margin-left: 50px;
+}
+#pole-wykresu1 {
+    display: block;
+    margin: auto;
+    max-width: 700px;
+    margin-bottom: 30px;
+}
+#wartosci1 {
+    display: flex;
+    justify-content: space-evenly;
+}
+.slupek:nth-child(1){height: 300px;}
+.slupek:nth-child(2){height: 3in;}
+.slupek:nth-child(3){height: 10cm;}
+.slupek:nth-child(4){height: 90mm;}
+.slupek:nth-child(5){height: 200pt;}
+#wykres-absolutne {
+    display: flex;
+    background-color: rgb(86, 86, 180);
+    max-width: 700px;
+    height: 400px;
+    justify-content: space-evenly;
+}
+.slupek {
+    background-color: orange;
+    width: 30px;
+}
+#pole-wykresu2 {
+    display: flex;
+    margin: auto;
+    width: 700px;
+    margin-bottom: 30px;
+}
+#wartosci2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-right: 10px;
+}
+#relatywne {
+    border-bottom: solid 2px black;
+}
+#wykres-relatywne {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(86, 86, 180);
+    width: 700px;
+    height: 400px;
+    justify-content: space-evenly;
+}
+.slupek-poziomy {
+    background-color: orange;
+    height: 30px;
+}
+.slupek-poziomy:nth-child(1){width: 80%;}
+.slupek-poziomy:nth-child(2){width: 30em;}
+.slupek-poziomy:nth-child(3){width: 30rem;}
+.slupek-poziomy:nth-child(4){width: 50vw;}
+.slupek-poziomy:nth-child(5){width: 50vmin;}
+#question {
+    text-align:right;
+    padding-right: 60px;
+    font-size: 3em;
+    font-weight: bold;
+    color: rgb(146, 13, 13);
+}
+#small {
+    font-size: 35px;
+}
+#smallest {
+    font-size: 20px;
+}
+@media only screen and (max-width: 710px) {
+    #pole-wykresu2 {
+        width: auto;
+    }
+    #wartosci2 {
+    }
+    #wykres-relatywne {
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 520px) {
+    #header {
+        justify-content:center;
+    }
+    #logo {
+        width: 100%;
+    }
+    .sprite {
+        width: auto;
+        background-position: center top;
+    }
+}
+@media only screen and (max-width: 340px) {
+    #logo {
+        width: 340px;
+    }
+    .sprite {
+        width: 340px;
+        background-position: center top;
+    }
+}
